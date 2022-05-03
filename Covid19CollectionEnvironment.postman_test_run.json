@@ -1,0 +1,111 @@
+{
+	"id": "14abca67-6ccb-49d2-940f-896ef604e517",
+	"name": "Covid19CollectionEnvironment",
+	"timestamp": "2022-03-25T19:56:42.092Z",
+	"collection_id": "20095986-4be337cd-7b9a-4fba-ae92-fc53ce1bb522",
+	"folder_id": 0,
+	"environment_id": "20095986-2191ce35-c021-4a45-967c-39411a89987c",
+	"totalPass": 3,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "d353519e-9b40-4889-a0a0-91c14274984e",
+			"name": "GetCountries",
+			"url": "https://covid-193.p.rapidapi.com/countries?search=Uk",
+			"time": 692,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				692
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "3ba39be6-8ae5-45c6-b7c9-496132f6ebd7",
+			"name": "GetStatistics",
+			"url": "https://covid-193.p.rapidapi.com/statistics?country=India",
+			"time": 705,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				705
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "f74a432b-d02b-481a-ab1a-352b07e97ef1",
+			"name": "GetHistory",
+			"url": "https://covid-193.p.rapidapi.com/history?country=India",
+			"time": 1877,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1877
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 3274,
+	"collection": {
+		"requests": [
+			{
+				"id": "d353519e-9b40-4889-a0a0-91c14274984e",
+				"method": "GET"
+			},
+			{
+				"id": "3ba39be6-8ae5-45c6-b7c9-496132f6ebd7",
+				"method": "GET"
+			},
+			{
+				"id": "f74a432b-d02b-481a-ab1a-352b07e97ef1",
+				"method": "GET"
+			}
+		]
+	}
+}
